@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Arne Didden - Junior frontend developer</title>
+    <script
+      src="https://kit.fontawesome.com/a356a0d62b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!----------HEADER---------->
+    <div class="header">
+      <div class="container">
+        <nav>
+          <p class="logo"><span>A</span>D.</p>
+          <ul>
+            <li><a class="active" href="#">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="container-header">
+            <div class="header-text">
+                <h1>Hi, I'm Arne Didden.</h1>
+                <p>
+                I'm a frontend development student at <a href="https://www.syntra-limburg.be/opleidingen/frontend-developer target="_blank"
+                rel="noreferrer"">Syntra Genk</a> who codes beautifuly simple things.
+                </p> 
+            </div>
+            <div class="header-image">
+                <img class="avatar" src="./Images/Avatar.png" alt="">
+            </div>
+        </div>
+        <div class="explore-next">
+            <a href="#projects">Explore my projects <i class="fa-solid fa-turn-down"></i></a>    
+        </div>
+      </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="application/javascript">
+      $(document).ready(function(){
+        $('ul li a').click(function(){
+          $('li a').removeClass("active");
+          $(this).addClass("active"); 
+        });
+      });     
+  </script>
+  </body>
+</html>
